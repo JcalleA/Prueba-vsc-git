@@ -1,3 +1,6 @@
 li=('hola Mundo')
 for i in li:
-    print(i)
+    if i == 'o':
+        print(i)
+    else:
+        print('nada aun')
