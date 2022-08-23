@@ -8,11 +8,12 @@ ventana.config(bd=50)
 ventana.title("Aseo acuavalle")
 
 buton1=ttk.Button(text="Aseo acuavalle")
-buton1.configure(width=300)
-buton1(pack)
+buton1.pack()
 
-
-
+menu=Menu(ventana)
+filemenu = Menu(menu)
+ventana.config(menu=menu)
+menu.add_cascade(label="Archivo", menu=filemenu)
 
 
 
